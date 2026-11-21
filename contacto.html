@@ -1,0 +1,147 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+    
+    <header>
+        <h2 style="text-align: center; color: #a81e1e;">Formulario de contacto</h2>
+        <p style="text-align: center; color: #c76363;">Por favor, complete el formulario</p>
+
+    </header>
+    <hr>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="https://www.humethospital.com/" target="_blank">Servicios</a>
+            <a href="contacto.html">Contacto</a>
+            
+        </nav>
+
+        <hr>
+        <!--formulario de registro-->
+        <form action="#">
+
+            <label for="nombre"> Ingrese su nombre </label>
+            <br>
+            <input type="text" id="nombre" placeholder="nombre" size="10" required>
+            <br><br>
+
+            <label for="apellido"> Ingrese su apellido </label>
+            <br>
+            <input type="text" id="apellido" placeholder="apellido" size="10" required>
+            <br><br>
+
+            <label for="date"> Ingrese su fecha de nacimiento </label>
+            <br>
+            <input type="date" id="fecha_nacimiento" required>
+            <br><br>
+
+              <label for="numero"> Número de cedula </label>
+            <br>
+            <input type="number" id="numero" placeholder="Número de cedula" size="10" required>
+            <br><br>
+
+            <label for="numero"> Número de celular </label>
+            <br>
+            <input type="number" id="numero" placeholder="Número de celular" size="10" required>
+            <br><br>
+
+            <p>Ingrese su dirección</p>
+            <label for="calle"> Calle </label>
+            <input type="text" id="calle" placeholder="Calle" required>
+            <br><br>
+
+            <label for="tipo de sangre"> Tipo de sangre </label>
+            <select name="tipo_sangre" id="tipo_sangre">
+                <option value="option" disabled selected>Selecionar opción</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+            <br><br>
+         
+        <label for="numero_casa">Especialidad medica</label>
+        <select name="especialidad" id="especialidad">
+                <option value="option" disabled selected>Selecionar opción</option>
+                <option value="cardiologia">Cardiología</option>
+                <option value="neurologia">Neurología</option>
+                <option value="pediatria">Pediatría</option>
+                <option value="dermatologia">Dermatología</option>
+                <option value="ginecologia">Ginecología</option>
+        </select>
+        <br><br>
+
+            <p>Seleccione el tipo de cita</p>
+            <label for="presesial"> Presencial </label>
+            <input type="checkbox" id="presesial" name="presesial">
+
+         <label for="online"> Online </label>
+            <input type="checkbox" id="online" name="online">
+            <br><br>
+
+            <label for="hora de cita "> Hora de cita </label>
+            <input type="time" id="hora_cita" name="hora_cita">
+            <br><br>
+
+            <label for="numero de celular de familiares">Número de celular de un familiar </label>
+            <br>
+            <input type="number" id="numero_celular_familiar"  required>
+            <br><br>
+
+            <label for="#"> Genero </label>
+            <br>
+            <label type="masculino">
+            <input type="radio" id="masculino" name="genero">Masculino 
+            </label>
+
+             <label type="femenino">
+            <input type="radio" id="femenino" name="genero"> Femenino
+            </label>
+
+            <label for="otro">
+             </label>
+            <br><br>
+
+            <label for="provincia"> Selecione su provincia </label>
+            </label>
+            <select name="provincia" id="provincia">
+                <option value="option" disabled selected>Selecionar opción</option>
+                <option value="pichincha">Pichincha</option>
+                <option value="guayas">Guayas</option>
+                <option value="manabi">Manabí</option>
+                <option value="santo domingo">Santo Domingo</option> 
+            </select>
+            <br><br>
+            
+            <label for="file" id="foto"> Subir fotos de examenes </label>
+                <br><br>
+            <input type="file" id="foto" name="foto" accept="image/*">
+            <br><br>
+
+             <label for="comentarios">Deje sus comentarios </label>
+             <br>   
+             <textarea name="comentarios" id="comentarios" cols="30" rows="5" placeholder="Escriba su comentarios"></textarea>
+            <br><br>
+            <input type="submit" value="Enviar">
+
+           <!--Botones
+              button = boton simple, sin una funcionalidad
+              submit = botón que envia datos(DB)
+              reset = limpia el formulario
+           -->
+        
+           <button>Botón simple</button>
+           <input type="reset" value="Limpiar formulario">
+
+            </select>
+        </form>
+    </body>
+</html>
